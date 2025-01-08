@@ -1,0 +1,186 @@
+/* Reset de estilo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(135deg, #090a0b, #2f3133);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  flex-direction: column;
+  background-size: cover;
+  color: #e5e5e5;
+}
+
+#app {
+  background-color: rgba(18, 18, 18, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+  min-width: 320px;
+  box-sizing: border-box;
+  border: 1px solid #00ff99;
+}
+
+h1 {
+  font-size: 2.6em;
+  color: #00ff99;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+/* Estilo dos inputs */
+input, select {
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 8px;
+  border: 2px solid #00ff99;
+  background-color: #2a2f2f;
+  color: #fff;
+  font-size: 1.2em;
+  width: 80%;
+  max-width: 250px;
+}
+
+input:focus, select:focus {
+  border-color: #00b3b3;
+  outline: none;
+}
+
+/* Botões */
+button {
+  padding: 15px 25px;
+  margin-top: 20px;
+  background-color: #00b3b3;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff00ff;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Estilo do Popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden; /* Inicialmente escondido */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup-content {
+  background-color: #121212;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3);
+  color: #e5e5e5;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.popup h2 {
+  color: #00ff99;
+  margin-bottom: 20px;
+}
+
+.popup p {
+  color: #00b3b3;
+  margin: 10px 0;
+}
+
+button {
+  padding: 15px 25px;
+  margin-top: 20px;
+  background-color: #00b3b3;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff00ff;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Histórico */
+#historico {
+  margin-top: 30px;
+  background-color: rgba(18, 18, 18, 0.8);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 255, 255, 0.1);
+}
+
+#historico h3 {
+  font-size: 1.5em;
+  color: #00ff99;
+}
+
+#historico-lista {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+#historico-lista li {
+  color: #00b3b3;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #app {
+    padding: 20px;
+  }
+
+  input, select {
+    width: 90%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #historico {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #historico-lista li {
+    font-size: 1em;
+  }
+}

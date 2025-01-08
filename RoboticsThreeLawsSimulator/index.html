@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador das Três Leis da Robótica</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Popup explicativo sobre as Três Leis da Robótica -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>As Três Leis da Robótica</h2>
+      <p><strong>1. Primeira Lei:</strong> Um robô não deve fazer mal a um ser humano, ou, por inação, permitir que um ser humano sofra dano.</p>
+      <p><strong>2. Segunda Lei:</strong> Um robô deve obedecer às ordens dadas por seres humanos, exceto quando tais ordens entrarem em conflito com a Primeira Lei.</p>
+      <p><strong>3. Terceira Lei:</strong> Um robô deve proteger a sua própria existência, desde que tal proteção não entre em conflito com as Primeira ou Segunda Leis.</p>
+      <button id="closePopup">Fechar</button>
+    </div>
+  </div>
+
+  <!-- Conteúdo principal da página -->
+  <div id="app">
+    <h1>Simulador das Três Leis da Robótica</h1>
+
+    <label for="humanCount">Número de humanos em perigo:</label>
+    <input type="number" id="humanCount" min="1" max="5">
+    
+    <label for="robotCount">Número de robôs disponíveis:</label>
+    <input type="number" id="robotCount" min="1" max="5">
+    
+    <label for="actionSelect">Escolha uma ação para o robô:</label>
+    <select id="actionSelect">
+      <option value="salvarHumano">Salvar um humano</option>
+      <option value="ajudarTarefas">Ajudar em tarefas</option>
+      <option value="analisarAmbiente">Analisar o ambiente</option>
+      <option value="interagirHumano">Interagir com humanos</option>
+    </select>
+
+    <button onclick="simular()">Simular</button>
+
+    <div id="resultado"></div>
+
+    <div id="historico">
+      <h3>Histórico de Decisões:</h3>
+      <ul id="historico-lista"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
