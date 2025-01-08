@@ -52,7 +52,7 @@ A terceira lei determina que os robôs devem se proteger para continuar funciona
 
 ## Contribuições
 
-Este projeto é aberto a contribuições. Se você deseja sugerir melhorias, corrigir erros ou adicionar novos marcos históricos à linha do tempo, fique à vontade para abrir uma issue ou enviar um pull request. Sua contribuição é muito bem-vinda!
+Este projeto é aberto a contribuições. Se você deseja sugerir melhorias ou corrigir erros, fique à vontade para abrir uma issue ou enviar um pull request. Sua contribuição é muito bem-vinda!
 
 ## Créditos
 
