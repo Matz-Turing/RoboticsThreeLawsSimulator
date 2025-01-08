@@ -1,11 +1,11 @@
-/* Reset de estilo */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilo geral */
+
 body {
   font-family: 'Orbitron', sans-serif;
   background: linear-gradient(135deg, #090a0b, #2f3133);
@@ -40,7 +40,7 @@ h1 {
   text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
 }
 
-/* Estilo dos inputs */
+
 input, select {
   padding: 10px;
   margin: 15px 0;
@@ -58,7 +58,7 @@ input:focus, select:focus {
   outline: none;
 }
 
-/* Botões */
+
 button {
   padding: 15px 25px;
   margin-top: 20px;
@@ -79,7 +79,7 @@ button:active {
   transform: scale(0.98);
 }
 
-/* Estilo do Popup */
+
 .popup {
   position: fixed;
   top: 0;
@@ -90,7 +90,7 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: hidden; /* Inicialmente escondido */
+  visibility: hidden; 
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
@@ -136,7 +136,7 @@ button:active {
   transform: scale(0.98);
 }
 
-/* Histórico */
+
 #historico {
   margin-top: 30px;
   background-color: rgba(18, 18, 18, 0.8);
@@ -161,7 +161,7 @@ button:active {
   font-size: 1.1em;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
   #app {
     padding: 20px;
