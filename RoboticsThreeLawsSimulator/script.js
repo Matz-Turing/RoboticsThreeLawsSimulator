@@ -1,20 +1,20 @@
 window.onload = function() {
-  // Exibir o popup após o carregamento da página
+  
   const popup = document.getElementById('popup');
   const closePopupButton = document.getElementById('closePopup');
 
-  // Exibir o popup com animação suave
+ 
   setTimeout(() => {
     popup.style.visibility = 'visible';
     popup.style.opacity = '1';
-  }, 500); // Exibe o popup após 500ms
+  }, 500); 
 
-  // Fechar o popup quando o botão for clicado
+ 
   closePopupButton.addEventListener('click', function() {
     popup.style.opacity = '0';
     setTimeout(() => {
       popup.style.visibility = 'hidden';
-    }, 300); // Atraso para permitir a animação de fade out
+    }, 300); 
   });
 };
 
@@ -33,7 +33,6 @@ function simular() {
   let res = '';
   let risco = 0;
 
-  // Lógica para decidir a ação com base na escolha
   switch (action) {
     case "salvarHumano":
       risco = 8;
@@ -59,10 +58,8 @@ function simular() {
       res = "Ação desconhecida.";
   }
 
-  // Exibe o resultado da ação com base no risco
   resultado.innerHTML = `${res} (Risco: ${risco})`;
 
-  // Adiciona a decisão ao histórico
   const listItem = document.createElement("li");
   listItem.textContent = `${res} (Risco: ${risco})`;
   historicoLista.appendChild(listItem);
